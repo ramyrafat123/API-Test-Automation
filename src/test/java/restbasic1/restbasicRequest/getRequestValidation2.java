@@ -15,6 +15,6 @@ public class getRequestValidation2 {
 	  RequestSpecification httpRequest =RestAssured.given();
 	  Response response =httpRequest.request(Method.GET, "/posts");
 	  String responseBodyAsString= response.getBody().asString();
-	  Assert.assertTrue(responseBodyAsString.contains("Appiuk"));
+	  Assert.assertTrue(responseBodyAsString.contains("Appiu"));
   }
 }
